@@ -1,0 +1,11 @@
+:root {
+    --primary-bg-color: rgba(3, 27, 29, 255);
+    --primary-text-color: #ffffff;
+    --highlight-color: #dfe22f;
+  }
+  
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
