@@ -19,8 +19,8 @@ function Proyects() {
   ];
   const objetoPivot = imagenes.length;
   return (
-    <Box as="section" id="projects" bg="rgba(3, 27, 29, 255)" textAlign="center" py="50px">
-      <Heading as="h2" color="#dfe22f" mb="20px">
+    <Box as="section" id="projects" bg="rgba(3, 27, 29, 255)" textAlign="center" py="50px" >
+      <Heading as="h2" color="#dfe22f" mb="20px" fontFamily='Times New Roman'>
         Portafolio
       </Heading>
       <HStack className="ContenedorProjectImg" spacing={3} bg="rgba(30, 51, 54, 255)" justify="space-between" w="95%"

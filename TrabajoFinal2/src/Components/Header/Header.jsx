@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import './Header.css'
 import { Box, Flex, Link, Icon, useColorModeValue } from "@chakra-ui/react";
 
 function Header() {
 
   return (
       <Box as="header" bg={useColorModeValue("rgba(3,27,29,255)", "rgba(3,27,29,255)")} color="#ffffff"
-      w="100%" p={2} pos="fixed" zIndex="10" borderBottom="1px solid #dfe22f">
+      w="100%" p={2} pos="fixed" zIndex="10" borderBottom="1px solid #dfe22f" fontFamily='Times New Roman'>
       <Flex justify="space-between" align="center">
         <Flex as="nav" gap={8} ml="35%">
           <Link href="#home"  _hover={{ borderBottom: "1px solid #dfe22f" }}>

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './Home.css'
 import { Box, Flex, Text, Link, Heading, Image, Icon, useColorModeValue } from "@chakra-ui/react";
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
@@ -7,9 +6,9 @@ function Home() {
 
   return (
     <Box as="section" id='home' bg="rgba(3,27,29,255)" color="#ffffff" w="100%" mt={55}
-      display="flex" justifyContent="space-between" alignItems="center" p={4}>
+      display="flex" justifyContent="space-between" alignItems="center" p={4} fontFamily='Times New Roman'>
 
-      <Flex as="section" flexDirection="column" w="30%" color="white" textAlign="left"
+      <Flex as="section" flexDirection="column" w="30%" textAlign="left"
        alignContent="center" ml="5%">
           <Box  display="flex" justifyContent="flex-start" alignItems="center" alignContent="center">        
             <Text fontSize="lg">

@@ -11,7 +11,7 @@ function Skills() {
   const logos = [
     {
         "logoUrl": f1,
-        "tittle": "CSS.",
+        "tittle": "CSS",
     },
     {
         "logoUrl": f2,
@@ -35,7 +35,7 @@ const objetoPivot = logos.length;
 
   return (
     <Box as="section" id="skills" bg="rgba(3, 27, 29, 1)" textAlign="center" py="50px">
-      <Heading as="h2" color="#dfe22f">
+      <Heading as="h2" color="#dfe22f" fontFamily='Times New Roman'>
         Mis Habilidades
       </Heading>
       <HStack className="skills-container" spacing={4} w="95%" ml="5%" mt="20px" justify="space-between">
