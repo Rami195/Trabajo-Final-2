@@ -10,7 +10,7 @@
 
 ## Inspiración
 
-Para el diseño de mi portafolio, me basé en un concepto que encontré en Dribbble, el cual puedes ver [aquí](https://dribbble.com/shots/23225862-Port-folio-website-template). Elegí este diseño porque me pareció muy atractivo, especialmente por su gama de colores y el formato.
+Para el diseño de mi portafolio, me basé en un concepto que encontré en Dribbble, el cual puedes ver https://dribbble.com/shots/23225862-Port-folio-website-template. Elegí este diseño porque me pareció muy atractivo, especialmente por su gama de colores y el formato.
 
 ## Tecnologías Utilizadas
 
@@ -31,7 +31,7 @@ En este proyecto, utilicé las siguientes tecnologías:
 
 ## Despliegue
 
-Utilicé Vercel para realizar el despliegue de mi portafolio. Vercel es una plataforma que facilita mucho el proceso de deploy, ofreciendo una integración continua y un flujo de trabajo sencillo para desarrolladores. Puedes ver mi portafolio desplegado [aquí]((https://trabajo-final-2.vercel.app)).
+Utilicé Vercel para realizar el despliegue de mi portafolio. Vercel es una plataforma que facilita mucho el proceso de deploy, ofreciendo una integración continua y un flujo de trabajo sencillo para desarrolladores. Puedes ver mi portafolio desplegado en https://trabajo-final-2.vercel.app 
 
 ## Conclusión
 
