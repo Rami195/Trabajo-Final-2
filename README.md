@@ -1,4 +1,8 @@
-Portafolio Trabajo Final 2
+<div align="center">
+
+# Portafolio Trabajo Final 2
+
+</div>
 Introducción
 ¡Hola! Soy Ramiro Martinez, actualmente estoy realizando un curso de Desarrollo web Fullstack en la UTN y además cursando el 3er año de Ingeniería en Sistemas. En este proyecto, he creado mi portafolio personal utilizando tecnologías nuevas para mí. Fue una experiencia bastante divertida y de mucho aprendizaje.
 
