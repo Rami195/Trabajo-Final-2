@@ -15,7 +15,7 @@ function About() {
           </Link>
         </VStack>
         <Box className="about-text" mt="0" pt="0" ml={{md:"20px",sm:"10%", base:"5%"}} display="flex" flexDirection="column" w="70%">
-          <Heading as="h2" color="#dfe22f" textAlign="left" fontFamily='Times New Roman'>
+          <Heading as="h2" fontSize="32px" color="#dfe22f" textAlign="left" fontFamily='Times New Roman' mb="20px">
             Sobre Mi
           </Heading>
           <Tabs>

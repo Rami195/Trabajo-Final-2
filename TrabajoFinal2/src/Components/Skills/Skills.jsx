@@ -35,7 +35,7 @@ const objetoPivot = logos.length;
 
   return (
     <Box as="section" id="skills" bg="rgba(3, 27, 29, 1)" textAlign="center" py="50px">
-      <Heading as="h2" color="#dfe22f" fontFamily='Times New Roman'>
+      <Heading as="h2" color="#dfe22f" fontSize="32px" fontFamily='Times New Roman'>
         Mis Habilidades
       </Heading>
       <Box display="flex" flexDirection={{lg:"row", base:"column"}} gap={{lg:"5%", base:"20px"}} spacing={4} w="95%" ml="5%" mt="20px" justify="space-between">

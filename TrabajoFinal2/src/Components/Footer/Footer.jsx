@@ -81,14 +81,14 @@ function Footer() {
   }
 
   return (
-    <Box as="footer" id='contact' bg="rgba(3, 27, 29, 1)" textAlign="center" py="50px" fontFamily='Times New Roman' color="#dfe22f">
-      <Heading as="h2" size="md" mb="20px" fontFamily='Times New Roman' display={{sm:"flex", base:"none"}} justifyContent="center" >
+    <Box as="footer" id='contact' bg="rgba(3, 27, 29, 1)" textAlign="center"  fontFamily='Times New Roman' color="#dfe22f" mt="0px">
+      <Heading as="h2" size="md" mb="20px" mt="0px" fontFamily='Times New Roman' display={{sm:"flex", base:"none"}} justifyContent="center" >
         Visitame
       </Heading>
-      <HStack display="flex" justify={{sm:"space-between", base:"center"}} w="80%" mx="auto" align="stretch">
-        <VStack className="Contenedor-text" w="300px" align="stretch" display={{sm:"flex", base:"none"}} >
-          <HStack className="Columnas" spacing={10} w="100%" justify="space-between" mb="20px" display={{md:"flex", base:"none"}}>
-            <VStack className="Tec" color="White" align="stretch">
+      <HStack display="flex" justify={{sm:"space-between", base:"center"}} w="80%" mx="auto" >
+        <VStack w="400px" align="stretch" display={{sm:"flex", base:"none"}} >
+          <HStack  spacing={10} w="100%" justify="space-between" mb="20px" display={{md:"flex", base:"none"}}>
+            <VStack  color="White" align="stretch">
               <Heading as="h4" size="sm" fontFamily='Times New Roman' color="#dfe22f" mb="20px">
                 Personalidad
               </Heading>
@@ -97,7 +97,7 @@ function Footer() {
               <Text>Confianza</Text>
               <Text>Ética</Text>
             </VStack>
-            <VStack className="Tec" color="white" align="stretch">
+            <VStack  color="white" align="stretch">
               <Heading as="h4" size="sm" fontFamily='Times New Roman' color="#dfe22f" mb="20px">
                 Tecnologías
               </Heading>
@@ -107,9 +107,9 @@ function Footer() {
               <Text>JS</Text>
             </VStack>
           </HStack>
-          <VStack className="social-media" align="center" w="100%" spacing={4} display={{sm:'flex', base:'none'}}>
+          <VStack   w="100%" spacing={4} display={{sm:'flex', base:'none'}}   justifyContent="flex-start" alignItems="left" alignContent="left">
             <Box display='flex'  flexDirection={{md:'row', sm:'column'}} spacing={2} gap="20px" padding="5px 5px 5px 5px">
-              <Heading as="h4" size="sm" fontFamily='Times New Roman'>
+              <Heading as="h4" size="sm" fontFamily='Times New Roman' display="flex" alignContent="left">
                 Sígueme
               </Heading>
               {logos.slice(0, objetoPivot).map((elemento, index) => (
@@ -122,12 +122,12 @@ function Footer() {
             </Box>
           </VStack>
         </VStack>
-        <VStack className="contact" w="300px" align="stretch">
+        <VStack  w="400px" align="stretch">
           <Heading as="h4" size="sm" mb="20px" fontFamily='Times New Roman' textAlign="center">
             Contáctame
           </Heading>
           <form id="registrationForm">
-            <HStack className="name" spacing={4} w="100%">
+            <HStack spacing={4} w="100%">
               <VStack>
                 <Input type="text" id="name" name="name" placeholder="Nombre" bg="rgba(3, 27, 29, 1)" border="1px solid #dfe22f" color="#dfe22f" textAlign="center" />
                 <Text className="error" id="nameError" fontSize='xs' visibility='hidden' minHeight='12px' mt="0px" mb="0px"></Text>

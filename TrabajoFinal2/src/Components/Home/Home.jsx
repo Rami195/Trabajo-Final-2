@@ -11,13 +11,13 @@ function Home() {
       <Flex as="section" flexDirection="column" w={{md:"30%", base:"80%"}} textAlign="left"
        alignContent="center" ml={{md:"5%",sm:"10%", base:"5%"}}>
           <Box  display="flex" justifyContent="flex-start" alignItems="center" alignContent="center">        
-            <Text fontSize="lg">
+            <Text fontSize="lg" fontFamily='Times New Roman'>
             <ArrowForwardIcon color="#dfe22f"  fontSize="20px" />
             Hola, Soy Ramiro Martinez
            </Text>
           </Box>
    
-          <Heading fontSize="40px" mt={4} mb={4}>
+          <Heading fontSize="40px" mt={4} mb={4} fontFamily='Times New Roman'>
             Soy un <br />
             <span style={{ color: '#dfe22f' }}>Desarrollador <br/> Web</span>
           </Heading>

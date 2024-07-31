@@ -20,7 +20,7 @@ function Proyects() {
   const objetoPivot = imagenes.length;
   return (
     <Box as="section" id="projects" bg="rgba(3, 27, 29, 255)" textAlign="center" py="50px" >
-      <Heading as="h2" color="#dfe22f" mb="20px" fontFamily='Times New Roman'>
+      <Heading as="h2" fontSize="32px" color="#dfe22f" mb="20px" fontFamily='Times New Roman'>
         Portafolio
       </Heading>
       <Box display="flex" flexDirection={{ base: "column", sm: "row" }} spacing={3}  mr={{lg:'0', base:"5%"}} ml="5%"
