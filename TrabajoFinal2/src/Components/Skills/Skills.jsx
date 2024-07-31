@@ -38,7 +38,7 @@ const objetoPivot = logos.length;
       <Heading as="h2" color="#dfe22f" fontFamily='Times New Roman'>
         Mis Habilidades
       </Heading>
-      <HStack className="skills-container" spacing={4} w="95%" ml="5%" mt="20px" justify="space-between">
+      <Box display="flex" flexDirection={{lg:"row", base:"column"}} gap={{lg:"5%", base:"20px"}} spacing={4} w="95%" ml="5%" mt="20px" justify="space-between">
         {logos.slice(0, objetoPivot).map((elemento, index) => (
           <CardSkills 
             key={index}
@@ -47,7 +47,7 @@ const objetoPivot = logos.length;
             />
           ))}
 
-      </HStack>
+      </Box>
     </Box>
   );
 }

@@ -48,7 +48,7 @@ function About() {
           </Tabs>
           <Link className="descarga" href="../../../doc/Cv Ramiro Martinez.pdf" mt="20px" bg="#dfe22f" color="rgba(3, 27, 29, 1)"
             borderRadius="5px" border="1px solid rgba(3, 27, 29, 1)" w="120px" h="30px" display={{base:"flex", md:"nome"}} alignItems="center"
-            justifyContent="center" transition="color 1s, background-color 1s" _hover={{ bg: "rgba(3, 27, 29, 1)", color: "#dfe22f", border: "1px solid #dfe22f" }}
+            justifyContent="center" ml={{md:"5%",sm:"10%", base:"5%"}} transition="color 1s, background-color 1s" _hover={{ bg: "rgba(3, 27, 29, 1)", color: "#dfe22f", border: "1px solid #dfe22f" }}
             fontFamily='Times New Roman' >
             Descargar CV
           </Link>

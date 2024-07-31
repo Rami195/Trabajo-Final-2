@@ -82,11 +82,11 @@ function Footer() {
 
   return (
     <Box as="footer" id='contact' bg="rgba(3, 27, 29, 1)" textAlign="center" py="50px" fontFamily='Times New Roman' color="#dfe22f">
-      <Heading as="h2" size="md" mb="20px" fontFamily='Times New Roman'>
+      <Heading as="h2" size="md" mb="20px" fontFamily='Times New Roman' display={{sm:"flex", base:"none"}} justifyContent="center" >
         Visitame
       </Heading>
-      <HStack className="footer-content" justify="space-between" w="80%" mx="auto" align="stretch">
-        <VStack className="Contenedor-text" w="300px" align="stretch">
+      <HStack display="flex" justify={{sm:"space-between", base:"center"}} w="80%" mx="auto" align="stretch">
+        <VStack className="Contenedor-text" w="300px" align="stretch" display={{sm:"flex", base:"none"}} >
           <HStack className="Columnas" spacing={10} w="100%" justify="space-between" mb="20px" display={{md:"flex", base:"none"}}>
             <VStack className="Tec" color="White" align="stretch">
               <Heading as="h4" size="sm" fontFamily='Times New Roman' color="#dfe22f" mb="20px">

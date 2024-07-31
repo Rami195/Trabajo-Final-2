@@ -4,8 +4,3 @@
     --highlight-color: #dfe22f;
   }
   
-body {
-    background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
-}
-

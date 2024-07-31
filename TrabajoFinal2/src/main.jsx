@@ -17,7 +17,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Header/>
       <Home/>
       <About/>
-   
+      <Skills/>
+      <Proyects/>
       <Footer/>
       </Flex>
       

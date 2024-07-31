@@ -3,7 +3,7 @@ import { Box, Heading, VStack, Image } from "@chakra-ui/react"
 
 const CardSkills = ({ logoUrl, tittle }) => {
   return (
-    <VStack className="service" bg="rgba(30, 51, 54, 255)" borderRadius="5px" align="center" justify="center"
+    <Box bg="rgba(30, 51, 54, 255)" borderRadius="5px" align="center" justify="center" mr={{lg:'0', base:"5%"}}
     cursor="pointer" transition="all 1.5s" p={4} _hover={{  bg: "white", color: "rgba(30, 51, 54, 255)", '& img': {
         filter: 'invert(1)'} }}>
 
@@ -13,7 +13,7 @@ const CardSkills = ({ logoUrl, tittle }) => {
       <Heading as="h3" size="md" color="#a39ba3">
         {tittle}
       </Heading>
-    </VStack>
+    </Box>
   );
 };
 
