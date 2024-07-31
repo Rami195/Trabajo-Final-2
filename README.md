@@ -10,7 +10,7 @@
 
 ## Inspiración
 
-Para el diseño de mi portafolio, me basé en un concepto que encontré en Dribbble, el cual puedes ver https://dribbble.com/shots/23225862-Port-folio-website-template. Elegí este diseño porque me pareció muy atractivo, especialmente por su gama de colores y el formato.
+Para el diseño de mi portafolio, me basé en un concepto que encontré en Dribbble, el cual puedes ver en https://dribbble.com/shots/23225862-Port-folio-website-template  Elegí este diseño porque me pareció muy atractivo, especialmente por su gama de colores y el formato.
 
 ## Tecnologías Utilizadas
 
