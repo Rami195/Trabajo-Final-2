@@ -81,11 +81,11 @@ function Footer() {
   }
 
   return (
-    <Box as="footer" id='contact' bg="rgba(3, 27, 29, 1)" textAlign="center"  fontFamily='Times New Roman' color="#dfe22f" mt="0px" mb="20px">
+    <Box as="footer" id='contact' bg="rgba(3, 27, 29, 1)" textAlign="center"  fontFamily='Times New Roman' color="#dfe22f" mt="0px" >
       <Heading as="h2" size="md" mb="20px" mt="0px" fontFamily='Times New Roman' display={{sm:"flex", base:"none"}} justifyContent="center" >
         Visitame
       </Heading>
-      <HStack display="flex" justify={{sm:"space-between", base:"center"}} w="80%" mx="auto" >
+      <HStack display="flex" justify={{sm:"space-between", base:"center"}} w="80%" mx="auto" mb="20px" >
         <VStack w="400px" align="stretch" display={{sm:"flex", base:"none"}} >
           <HStack  spacing={10} w="100%" justify="space-between" mb="20px" display={{md:"flex", base:"none"}}>
             <VStack  color="White" align="stretch">
