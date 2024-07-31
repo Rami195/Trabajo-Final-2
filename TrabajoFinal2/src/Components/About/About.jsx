@@ -1,13 +1,13 @@
 import { Box, Image, Link, Text, Heading, VStack, Flex, Tab, Tabs, TabList, TabPanel, TabPanels, ListItem, UnorderedList } from "@chakra-ui/react";
-import { color } from "framer-motion";
+
 
 function About() {
   return (
     <Box as="section" id="about" p="10px 10px 10px 0" bg="rgba(3,27,29,255)" fontFamily='Times New Roman'>  
       <Flex mt="5%" w="100%">
         <VStack className="about-image" textAlign="center" spacing={4} display={{base: "none", md: "flex"}}>
-          <Image src="../src/img/Perfil.jpg" alt="Perfil" boxSize="300px" border="5px solid #dfe22f" borderRadius="20px"  />
-          <Link className="descarga" href="../doc/Cv Ramiro Martinez.pdf" mt="20px" bg="#dfe22f" color="rgba(3, 27, 29, 1)"
+          <Image src="../src/img/Perfil.png" alt="Perfil" boxSize="300px" border="5px solid #dfe22f" borderRadius="20px"  />
+          <Link className="descarga" href="../src/doc/Cv Ramiro Martinez.pdf" mt="20px" bg="#dfe22f" color="rgba(3, 27, 29, 1)"
             borderRadius="5px" border="1px solid rgba(3, 27, 29, 1)" w="120px" h="30px" display="flex" alignItems="center"
             justifyContent="center" transition="color 1s, background-color 1s" _hover={{ bg: "rgba(3, 27, 29, 1)", color: "#dfe22f", border: "1px solid #dfe22f" }}
             fontFamily='Times New Roman'>
@@ -46,7 +46,7 @@ function About() {
               </TabPanel>
             </TabPanels>
           </Tabs>
-          <Link  href="../doc/Cv Ramiro Martinez.pdf" mt="20px" bg="#dfe22f" color="rgba(3, 27, 29, 1)"
+          <Link  href="../src/doc/Cv Ramiro Martinez.pdf" mt="20px" bg="#dfe22f" color="rgba(3, 27, 29, 1)"
             borderRadius="5px" border="1px solid rgba(3, 27, 29, 1)" w="120px" h="30px" display={{base:"flex", md:"none"}} alignItems="center"
             justifyContent="center" ml={{md:"5%",sm:"10%", base:"5%"}} transition="color 1s, background-color 1s" _hover={{ bg: "rgba(3, 27, 29, 1)", color: "#dfe22f", border: "1px solid #dfe22f" }}
             fontFamily='Times New Roman' >

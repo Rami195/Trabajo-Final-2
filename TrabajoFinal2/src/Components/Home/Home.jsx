@@ -43,7 +43,7 @@ function Home() {
         
       </Flex>
       <Flex as="section" align="center" justify="center" display={{base: "none", md: "flex"}} w={{ base: '100%', md: '30%' }}>
-        <Image src="../img/Perfil.jpg" alt="" border="5px solid #dfe22f" w="100%" h="auto" borderRadius="20"
+        <Image src="../src/img/Perfil.png" alt="" border="5px solid #dfe22f" w="100%" h="auto" borderRadius="20"
         />
       </Flex>
     </Box>
