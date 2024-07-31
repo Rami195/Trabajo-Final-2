@@ -1,38 +1,105 @@
-import { Box, Heading, VStack, HStack,  Button, Text, Input} from "@chakra-ui/react";
-import {Redes} from '../Redes/Redes.jsx'
-import f1 from '../../../img/facebook.svg'
-import f2 from '../../../img/twitter.svg'
-import f3 from '../../../img/linkedin.svg'
-import f4 from '../../../img/instagram.svg'
+import { useEffect } from 'react';
+import { Box, Heading, VStack, HStack, Button, Text, Input } from "@chakra-ui/react";
+import { Redes } from '../Redes/Redes.jsx';
+import f1 from '../../../img/facebook.svg';
+import f2 from '../../../img/twitter.svg';
+import f3 from '../../../img/linkedin.svg';
+import f4 from '../../../img/instagram.svg';
 
 function Footer() {
   const logos = [
-    {logo: f1, refe:"https://www.facebook.com/share/DGoipBmxY38T8o8b/?mibextid=qi2Omg"},
-    {logo: f2, refe:"https://x.com/RamiM53?t=aakaIkIgd9q27S-Hx_UM2A&s=08"},
-    {logo: f3, refe:"https://ar.linkedin.com/in/ramiro-martinez-315666252"},
-    {logo: f4, refe:"https://www.instagram.com/ramiii_martinez?utm_source=qr&igsh=NWlzZGw5cmR6enY3"}
+    { logo: f1, refe: "https://www.facebook.com/share/DGoipBmxY38T8o8b/?mibextid=qi2Omg" },
+    { logo: f2, refe: "https://x.com/RamiM53?t=aakaIkIgd9q27S-Hx_UM2A&s=08" },
+    { logo: f3, refe: "https://ar.linkedin.com/in/ramiro-martinez-315666252" },
+    { logo: f4, refe: "https://www.instagram.com/ramiii_martinez?utm_source=qr&igsh=NWlzZGw5cmR6enY3" }
   ];
   const objetoPivot = logos.length;
+
+  useEffect(() => {
+    const form = document.getElementById('registrationForm');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        if (!validarFormulario()) {
+          e.preventDefault();
+        }
+      });
+    }
+
+    return () => {
+      if (form) {
+        form.removeEventListener('submit', function (e) {
+          e.preventDefault();
+        });
+      }
+    };
+  }, []);
+
+  function validarFormulario() {
+    let nombre = document.getElementById('name').value;
+    let apellido = document.getElementById('apellido').value;
+    let email = document.getElementById('email').value;
+
+    let nameError = document.getElementById('nameError');
+    let apellidoError = document.getElementById('apellidoError');
+    let emailError = document.getElementById('emailError');
+
+    let validar = true;
+
+    if (nombre.trim() === '') {
+      nameError.textContent = "El nombre es obligatorio";
+      nameError.style.visibility = 'visible';
+      validar = false;
+    } else if (/\d/.test(nombre)) {
+      nameError.textContent = "El nombre no puede contener números";
+      nameError.style.visibility = 'visible';
+      validar = false;
+    } else {
+      nameError.style.visibility = 'hidden';
+    }
+
+    if (apellido.trim() === '') {
+      apellidoError.textContent = "El apellido es obligatorio";
+      apellidoError.style.visibility = 'visible';
+      validar = false;
+    } else if (/\d/.test(apellido)) {
+      apellidoError.textContent = "El apellido no puede contener números";
+      apellidoError.style.visibility = 'visible';
+      validar = false;
+    } else {
+      apellidoError.style.visibility = 'hidden';
+    }
+
+    if (email.trim() === '') {
+      emailError.textContent = "El email es obligatorio";
+      emailError.style.visibility = 'visible';
+      validar = false;
+    } else {
+      emailError.style.visibility = 'hidden';
+    }
+
+    return validar;
+  }
+
   return (
-    <Box as="footer" bg="rgba(3, 27, 29, 1)" textAlign="center" py="50px" fontFamily='Times New Roman' color="#dfe22f">
-      <Heading as="h2" size="md"  mb="20px" fontFamily='Times New Roman'>
+    <Box as="footer" id='contact' bg="rgba(3, 27, 29, 1)" textAlign="center" py="50px" fontFamily='Times New Roman' color="#dfe22f">
+      <Heading as="h2" size="md" mb="20px" fontFamily='Times New Roman'>
         Visitame
       </Heading>
-      <HStack className="footer-content" justify="space-between" w="80%" mx="auto" align="flex-start">
-        <VStack className="Contenedor-text" align="flex-start" pl="5%">
-          <HStack className="Columnas" spacing={10}>
-            <VStack className="Tec" align="flex-start" color="White">
-              <Heading as="h4" size="md" fontFamily='Times New Roman' color="#dfe22f">
+      <HStack className="footer-content" justify="space-between" w="80%" mx="auto" align="stretch">
+        <VStack className="Contenedor-text" w="300px" align="stretch">
+          <HStack className="Columnas" spacing={10} w="100%" justify="space-between" mb="20px" display={{md:"flex", base:"none"}}>
+            <VStack className="Tec" color="White" align="stretch">
+              <Heading as="h4" size="sm" fontFamily='Times New Roman' color="#dfe22f" mb="20px">
                 Personalidad
               </Heading>
               <Text>Seguridad</Text>
               <Text>Integridad</Text>
               <Text>Confianza</Text>
-              <Text>Etica</Text>
+              <Text>Ética</Text>
             </VStack>
-            <VStack className="Tec" align="flex-start" color="white">
-              <Heading as="h4" size="md" fontFamily='Times New Roman' color="#dfe22f">
-                Tecnologias
+            <VStack className="Tec" color="white" align="stretch">
+              <Heading as="h4" size="sm" fontFamily='Times New Roman' color="#dfe22f" mb="20px">
+                Tecnologías
               </Heading>
               <Text>Java</Text>
               <Text>CSS</Text>
@@ -40,32 +107,39 @@ function Footer() {
               <Text>JS</Text>
             </VStack>
           </HStack>
-          <VStack className="social-media" align="center" spacing={4}>
-            <Heading as="h4" size="md"  fontFamily='Times New Roman'>
-              Sigueme
-            </Heading>
-            <HStack className="Logos" spacing={4}>
-            {logos.slice(0, objetoPivot).map((elemento, index) => (
-                <Redes 
-                    key={index} 
-                    logo={elemento.logo}
-                    refe={elemento.refe}
+          <VStack className="social-media" align="center" w="100%" spacing={4} display={{sm:'flex', base:'none'}}>
+            <Box display='flex'  flexDirection={{md:'row', sm:'column'}} spacing={2} gap="20px" padding="5px 5px 5px 5px">
+              <Heading as="h4" size="sm" fontFamily='Times New Roman'>
+                Sígueme
+              </Heading>
+              {logos.slice(0, objetoPivot).map((elemento, index) => (
+                <Redes
+                  key={index}
+                  logo={elemento.logo}
+                  refe={elemento.refe}
                 />
-            ))}
-            </HStack>
+              ))}
+            </Box>
           </VStack>
         </VStack>
-        <VStack className="contact" align="flex-start" pr="10px" pb="40px" w="400px">
-          <Heading as="h4" size="md" mb="20px" fontFamily='Times New Roman'>
-            Contactame
+        <VStack className="contact" w="300px" align="stretch">
+          <Heading as="h4" size="sm" mb="20px" fontFamily='Times New Roman' textAlign="center">
+            Contáctame
           </Heading>
-          <form>
+          <form id="registrationForm">
             <HStack className="name" spacing={4} w="100%">
-              <Input type="text" placeholder="Nombre" bg="rgba(3, 27, 29, 1)" border="1px solid #dfe22f" color="#dfe22f" textAlign="center" />
-              <Input type="text" placeholder="Apellido" bg="rgba(3, 27, 29, 1)" border="1px solid #dfe22f" color="#dfe22f" textAlign="center" />
+              <VStack>
+                <Input type="text" id="name" name="name" placeholder="Nombre" bg="rgba(3, 27, 29, 1)" border="1px solid #dfe22f" color="#dfe22f" textAlign="center" />
+                <Text className="error" id="nameError" fontSize='xs' visibility='hidden' minHeight='12px' mt="0px" mb="0px"></Text>
+              </VStack>
+              <VStack>
+                <Input type="text" id="apellido" name="apellido" placeholder="Apellido" bg="rgba(3, 27, 29, 1)" border="1px solid #dfe22f" color="#dfe22f" textAlign="center" />
+                <Text className="error" id="apellidoError" fontSize='xs' visibility='hidden' minHeight='12px' mt="0px" mb="0px"></Text>
+              </VStack>
             </HStack>
-            <Input type="email" placeholder="Email" mt={4} bg="rgba(3, 27, 29, 1)" border="1px solid #dfe22f" color="#dfe22f" textAlign="center" />
-            <Button as="a" className="submit" href="" mt={4} bg="rgba(3, 27, 29, 1)" border="1px solid #dfe22f" color="#dfe22f" textAlign="center" _hover={{ bg: "#dfe22f", color: "rgba(3, 27, 29, 1)" }} borderRadius="5px" w="100%">
+            <Input type="email" id="email" name="email" placeholder="Email" mt={4} bg="rgba(3, 27, 29, 1)" border="1px solid #dfe22f" color="#dfe22f" textAlign="center" />
+            <Text className="error" id="emailError" fontSize='xs' visibility='hidden' minHeight='12px' mt="0px" mb="0px"></Text>
+            <Button type="submit" className="submit" mt={4} bg="rgba(3, 27, 29, 1)" border="1px solid #dfe22f" transition="all 1.0s" color="#dfe22f" textAlign="center" _hover={{ bg: "#dfe22f", color: "rgba(3, 27, 29, 1)" }} borderRadius="5px" w="100%">
               Enviar
             </Button>
           </form>
@@ -75,4 +149,4 @@ function Footer() {
   );
 }
 
-export {Footer};
+export { Footer };
