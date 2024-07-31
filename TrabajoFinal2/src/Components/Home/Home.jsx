@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Box, Flex, Text, Link, Heading, Image, Icon, useColorModeValue } from "@chakra-ui/react";
 import { ArrowForwardIcon } from '@chakra-ui/icons'
-
+import fot from '../../assets/img1/Perfil.png'
 function Home() {
 
   return (
@@ -43,7 +43,7 @@ function Home() {
         
       </Flex>
       <Flex as="section" align="center" justify="center" display={{base: "none", md: "flex"}} w={{ base: '100%', md: '30%' }}>
-        <Image src="../src/img/Perfil.png" alt="" border="5px solid #dfe22f" w="100%" h="auto" borderRadius="20"
+        <Image src={fot} alt="" border="5px solid #dfe22f" w="100%" h="auto" borderRadius="20"
         />
       </Flex>
     </Box>
