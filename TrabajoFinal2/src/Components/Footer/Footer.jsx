@@ -81,7 +81,7 @@ function Footer() {
   }
 
   return (
-    <Box as="footer" id='contact' bg="rgba(3, 27, 29, 1)" textAlign="center"  fontFamily='Times New Roman' color="#dfe22f" mt="0px">
+    <Box as="footer" id='contact' bg="rgba(3, 27, 29, 1)" textAlign="center"  fontFamily='Times New Roman' color="#dfe22f" mt="0px" mb="20px">
       <Heading as="h2" size="md" mb="20px" mt="0px" fontFamily='Times New Roman' display={{sm:"flex", base:"none"}} justifyContent="center" >
         Visitame
       </Heading>
