@@ -17,7 +17,7 @@ function Home() {
            </Text>
           </Box>
    
-          <Heading fontSize="40px" mt={4} mb={4} fontFamily='Times New Roman'>
+          <Heading fontSize={{base:"40px"  , md:"36px" , lg:"40px"  }}mt={4} mb={4} fontFamily='Times New Roman'>
             Soy un <br />
             <span style={{ color: '#dfe22f' }}>Desarrollador <br/> Web</span>
           </Heading>
