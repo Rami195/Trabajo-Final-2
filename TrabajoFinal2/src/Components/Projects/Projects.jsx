@@ -1,4 +1,4 @@
-import { Box, Heading, VStack, HStack, Image } from "@chakra-ui/react";
+import { Box, Heading} from "@chakra-ui/react";
 import React from "react";
 import CardProyects from "../CardProyects/CardProyects.jsx"
 import f1 from '../../../img/login.png'
@@ -7,15 +7,9 @@ import f3 from '../../../img/Services.png'
 
 function Proyects() {
   const imagenes = [
-    {
-      imgUrl: f1,
-    },
-    {
-      imgUrl: f2,
-    },
-    {
-      imgUrl: f3,
-    },
+    {imgUrl: f1, refe:"https://github.com/Rami195/image-based-web-project"},
+    {imgUrl: f2, refe:"https://github.com/Rami195/image-based-web-project"},
+    {imgUrl: f3, refe:"https://github.com/Rami195/image-based-web-project2-"}
   ];
   const objetoPivot = imagenes.length;
   return (
@@ -28,7 +22,7 @@ function Proyects() {
         py="15px" px="0" gap={5}>
 
         {imagenes.slice(0, objetoPivot).map((elemento, index) => (
-          <CardProyects key={index} imgUrl={elemento.imgUrl} />
+          <CardProyects key={index} imgUrl={elemento.imgUrl} refe={elemento.refe}/>
         ))}
       </Box>
     </Box>
